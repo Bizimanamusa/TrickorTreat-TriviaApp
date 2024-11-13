@@ -19,7 +19,7 @@ public class TrickActivity extends AppCompatActivity {
 
         // Create the Trivia object and load a random trivia question
         trivia = new Trivia();
-        trivia.loadTrivia("trivia.csv");
+        trivia.loadTrivia(this, "trivia.csv");
 
         // Set the trivia question on the TextView
         TextView triviaQuestion = findViewById(R.id.triviaQuestion);
