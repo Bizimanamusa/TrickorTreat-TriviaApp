@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">kcy282-lab4</string>
+    <string name="trick_or_treat">Trick or Treat</string>
+    <string name="trick">Trick</string>
+    <string name="treat">Treat</string>
+    <string name="trivia_question">Trivia Question?</string>
+</resources>
