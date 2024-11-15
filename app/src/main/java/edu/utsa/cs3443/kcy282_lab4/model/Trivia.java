@@ -39,19 +39,22 @@ public class Trivia {
             BufferedReader reader = new BufferedReader(new InputStreamReader(context.getAssets().open(filename)));
             String line;
             while ((line = reader.readLine()) != null) {
-                String[] data = line.split(",", 5);  // Expecting 5 parts: question, 3 answers, correct answer index
+                String[] data = line.split(";", 6);  // Expecting 5 parts: question, 3 answers, correct answer index
 
                 // Check if each line has exactly 5 elements
-                if (data.length == 5) {
+                if (data.length == 6) {
                     try {
                         String question = data[0];
                         String answer1 = data[1];
                         String answer2 = data[2];
                         String answer3 = data[3];
                         int correctAnswerIndex = Integer.parseInt(data[4].trim());  // Parse correct answer index
+                        String explanation = data[5];
 
                         // Add the trivia question to the list for later random selection
                         triviaQuestions.add(new TriviaQuestion(question, answer1, answer2, answer3, correctAnswerIndex));
+
+                        this.explanation = explanation;
                     } catch (NumberFormatException e) {
                         Log.e("Trivia", "Error parsing correct answer index for line: " + line, e);
                     }

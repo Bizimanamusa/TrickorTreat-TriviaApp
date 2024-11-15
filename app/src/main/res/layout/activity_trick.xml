@@ -36,19 +36,19 @@
             android:id="@+id/answer1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Answer 1" />
+            android:text="@string/answer_1" />
 
         <Button
             android:id="@+id/answer2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Answer 2" />
+            android:text="@string/answer_2" />
 
         <Button
             android:id="@+id/answer3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Answer 3" />
+            android:text="@string/answer_3" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,4 +4,9 @@
     <string name="trick">Trick</string>
     <string name="treat">Treat</string>
     <string name="trivia_question">Trivia Question?</string>
+    <string name="answer_1">Answer 1</string>
+    <string name="answer_2">Answer 2</string>
+    <string name="answer_3">Answer 3</string>
+    <string name="get_a_new_treat">Get a New Treat</string>
+    <string name="random_treat_image">Random Treat Image</string>
 </resources>

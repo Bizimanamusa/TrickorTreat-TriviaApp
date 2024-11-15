@@ -7,44 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".TreatActivity">
 
-    <!-- res/layout/activity_screen2.xml -->
+    <!-- RelativeLayout to hold ImageView and Button -->
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp">
 
-        <!-- Header Text -->
-        <TextView
-            android:id="@+id/tvHeaderScreen2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Screen 2 Header"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_centerHorizontal="true"
-            android:padding="8dp" />
-
-        <!-- Content TextView -->
-        <TextView
-            android:id="@+id/tvContentScreen2"
+        <!-- ImageView to display random images -->
+        <ImageView
+            android:id="@+id/defaultImageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="This is the content for Screen 2."
-            android:layout_below="@id/tvHeaderScreen2"
-            android:layout_marginTop="16dp"
-            android:padding="8dp" />
+            android:layout_height="match_parent"
+            android:src="@drawable/your_default_image"
+            android:contentDescription="@string/random_treat_image" />
 
-        <!-- Navigation Button -->
+        <!-- Button to get a new random treat -->
         <Button
-            android:id="@+id/buttonToScreen3"
+            android:id="@+id/btnTreat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Go to Screen 3"
-            android:layout_below="@id/tvContentScreen2"
+            android:text="@string/get_a_new_treat"
+            android:layout_below="@id/defaultImageView"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp" />
 
     </RelativeLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
